@@ -6,7 +6,7 @@ def apply_all_func(int_list, *functions):
             result = func(int_list)
             results[func.__name__] = result
         except TypeError:
-            print(f"Warning: {func.__name__} is not applicable to this list type.")
+            print(f"Внимание: {func.__name__} не применимо к этому типу списка.")
     
     return results
 
